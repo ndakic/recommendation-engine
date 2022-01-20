@@ -1,0 +1,24 @@
+id,name,album,album_id,artists,artist_ids,track_number,disc_number,explicit,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature,year,release_date
+7lmeHLHBe4nmXzuXc0HDjk,Testify,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],1,1,False,0.47,0.978,7,-5.399,1,0.0727,0.0261,1.09e-05,0.35600000000000004,0.503,117.906,210133,4.0,1999,1999-11-02
+1wsRitfRRtWyEapl0q22o8,Guerrilla Radio,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],2,1,True,0.599,0.9570000000000001,11,-5.763999999999999,1,0.188,0.0129,7.06e-05,0.155,0.489,103.68,206200,4.0,1999,1999-11-02
+1hR0fIFK2qRG3f3RF70pb7,Calm Like a Bomb,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],3,1,False,0.315,0.97,7,-5.4239999999999995,1,0.483,0.0234,2.03e-06,0.122,0.37,149.749,298893,4.0,1999,1999-11-02
+2lbASgTSoDO7MTuLAXlTW0,Mic Check,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],4,1,True,0.44,0.9670000000000001,11,-5.83,0,0.237,0.163,3.64e-06,0.121,0.574,96.75200000000001,213640,4.0,1999,1999-11-02
+1MQTmpYOZ6fcMQc56Hdo7T,Sleep Now In the Fire,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],5,1,False,0.426,0.929,2,-6.729,1,0.0701,0.00162,0.105,0.0789,0.539,127.059,205600,4.0,1999,1999-11-02
+2LXPNLSMAauNJfnC58lSqY,Born of a Broken Man,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],6,1,False,0.298,0.848,2,-5.947,1,0.0727,0.0538,0.0015199999999999999,0.201,0.19399999999999998,148.282,280960,4.0,1999,1999-11-02
+3moeHk8eIajvUEzVocXukf,Born As Ghosts,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],7,1,False,0.41700000000000004,0.976,9,-6.032,1,0.175,0.00042699999999999997,0.000134,0.107,0.483,90.395,202040,4.0,1999,1999-11-02
+4llunZfVXv3NvUzXVB3VVL,Maria,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],8,1,False,0.27699999999999997,0.873,11,-6.5710000000000015,0,0.0883,0.006940000000000001,5.400000000000001e-05,0.188,0.618,172.84799999999996,228093,4.0,1999,1999-11-02
+21Mq0NzFoVRvOmLTOnJjng,Voice of the Voiceless,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],9,1,False,0.441,0.882,7,-7.362999999999999,1,0.044000000000000004,0.0195,0.006840000000000001,0.15,0.418,83.37100000000002,151573,4.0,1999,1999-11-02
+6s2FgJbnnMwFTpWJZzvb6z,New Millennium Homes,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],10,1,False,0.44799999999999995,0.861,9,-6.12,1,0.0676,0.0030600000000000002,0.0,0.0987,0.7609999999999999,92.777,224933,4.0,1999,1999-11-02
+7o2Razxnl33Jrgz4PpMYNa,Ashes In the Fall,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],11,1,True,0.456,0.7040000000000001,7,-6.687,1,0.0982,0.0052,4.12e-06,0.0595,0.6559999999999999,140.629,277267,4.0,1999,1999-11-02
+3Hxu3Ey1TV9mZ5XqMXckiS,War Within a Breath,The Battle Of Los Angeles,2eia0myWFgoHuttJytCxgX,['Rage Against The Machine'],['2d0hyoQ5ynDBnkvAbJKORj'],12,1,False,0.39899999999999997,0.965,6,-5.901,1,0.14300000000000002,0.00442,0.0314,0.3670000000000001,0.174,98.464,216427,4.0,1999,1999-11-02
+
+
+
+
+
+
+
+
+
+
+
