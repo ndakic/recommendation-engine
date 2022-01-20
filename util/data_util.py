@@ -8,7 +8,7 @@ COLUMN_NAMES = ["id", "name", "album", "album_id", "artists", "artist_ids", "tra
 
 
 def generate_random_user_likes(filename, total_number_of_tracks, total_number_of_users):
-    data = load_data(filename)
+    data = load_data(filename, True)
     results = []
     for i in range(0, total_number_of_users):
         random_tracks = data.sample(total_number_of_tracks)[["id"]]
@@ -25,8 +25,10 @@ def print_random_samples(data):
     print("10 random samples from dataset: \n", data.sample(10))
 
 
-def load_data(filename):
+def load_data(filename, raw=False):
     data = pd.read_csv(filename, skiprows=[0], sep=",", names=COLUMN_NAMES, low_memory=False)
+    if raw:
+        return data
     selected_features = data.drop(columns=['id', 'release_date', 'year', 'album', 'album_id', 'artist_ids'])
     print("Loaded data (10 RAW samples): \n", selected_features.sample(10))
     return selected_features
