@@ -1,6 +1,6 @@
 import numpy as np
-from sklearn.cluster import KMeans
 
+from sklearn.cluster import KMeans
 from util import data_util
 
 
@@ -37,4 +37,4 @@ class SpotifySongRecommender:
     def print_recommendations(self, songs, total_number_of_recommendations):
         for song in songs:
             recommended_songs = self.recommend(song, total_number_of_recommendations)
-            print("Recommended songs: ", recommended_songs)
+            print("\nContent Based Recommendations: \n", recommended_songs)
