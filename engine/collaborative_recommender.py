@@ -2,7 +2,7 @@ from sklearn.neighbors import NearestNeighbors
 from fuzzywuzzy import fuzz
 
 
-class Recommender:
+class CFRecommender:
     def __init__(self, metric, algorithm, k, data, decode_id_song):
         self.metric = metric
         self.algorithm = algorithm
@@ -21,6 +21,8 @@ class Recommender:
         print(f"\nStarting the recommendation process for song: {new_song} (song_id: {recommend_song_id}) ...")
         # Return the n neighbors for the song id
         distances, indices = self.model.kneighbors(self.data[recommend_song_id], n_neighbors=n_recommendations)
+        # print("song: ", self.data[recommend_song_id]) ---> (0, 753)	9.0
+        # print("data: ", self.data)                    ---> (0, 670)	9.0, (1, 803)	1.0
         return sorted(list(zip(indices.squeeze().tolist(), distances.squeeze().tolist())), key=lambda x: x[1])[:0:-1]
 
     def _map_indices_to_song_title(self):

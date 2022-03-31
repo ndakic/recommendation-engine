@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 from util import data_util
 
 
-class SpotifySongRecommender:
+class CBRecommender:
     def __init__(self, dataset):
         self.dataset = dataset
 
@@ -20,7 +20,7 @@ class SpotifySongRecommender:
         distance = []
         song = self.dataset[(self.dataset.name.str.lower() == liked_song[0].lower()) &
                             (self.dataset.artists.str.lower() == liked_song[1].lower())].head(1).values[0]
-        print("Source Song: ", song)
+        # print("Source Song: ", song)
         rec = self.dataset[(self.dataset.name.str.lower() != liked_song[0].lower()) &
                            (self.dataset.artists.str.lower() != liked_song[1].lower())]
         for songs in rec.values:
@@ -31,7 +31,7 @@ class SpotifySongRecommender:
             distance.append(d)
         rec['distance'] = distance
         rec = rec.sort_values('distance')
-        columns = ['artists', 'name']
+        columns = ['name']
         return rec[columns][:amount]
 
     def print_recommendations(self, songs, total_number_of_recommendations):

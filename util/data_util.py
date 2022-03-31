@@ -1,6 +1,7 @@
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
+import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.preprocessing import MinMaxScaler
 
 DATA_TYPES = ['int16', 'int32', 'int64', 'float16', 'float32', 'float64']
 COLUMN_NAMES = ["track_id", "name", "album", "album_id", "artists", "artist_ids", "track_number", "disc_number",
@@ -50,3 +51,14 @@ def data_normalization(data):
     n_data = data.select_dtypes(include=DATA_TYPES)
     scaler = MinMaxScaler()
     data[n_data.columns] = scaler.fit_transform(n_data[n_data.columns])
+
+
+def plot_csr_matrix(csr_matrix):
+    # convert the dense matrix to dictionary format, get an array of xy-coordinates and an array of values
+    mtrx_dict = csr_matrix.todok()
+    xy = np.array(list(mtrx_dict.keys()))
+    vals = np.array(list(mtrx_dict.values()))
+    # create a scatter plot
+    plt.scatter(xy[:, 0], xy[:, 1], s=5, c=vals, cmap='inferno')
+    plt.colorbar()
+    plt.show()
