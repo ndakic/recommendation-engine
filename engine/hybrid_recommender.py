@@ -38,7 +38,11 @@ class HybridRecommender:
     def recommend(self, song):
         content_based_recommendations = self.get_cb_recommendations(song)
         collaboration_filtering_recommendations = self.get_cf_recommendations(song[0])
-        print(content_based_recommendations)
-        print(collaboration_filtering_recommendations)
+        cb_df_object = pd.DataFrame(data=collaboration_filtering_recommendations, columns=['name'])
+        result = pd.concat([content_based_recommendations, cb_df_object]).sample(frac=1).reset_index(drop=True)
+        print("Hybrid Recommendations: \n")
+        print(result)
+
+
 
 
