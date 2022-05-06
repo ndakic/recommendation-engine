@@ -29,6 +29,7 @@ class HybridRecommender:
         # Computing a hybrid recommendation score based on CF and CB scores
         # recs_df['recStrengthHybrid'] = recs_df['recStrengthCB'] * recs_df['recStrengthCF']
         recs_df['recStrengthHybrid'] = (recs_df['recStrengthCB'] * self.cb_ensemble_weight) + (recs_df['recStrengthCF'] * self.cf_ensemble_weight)
+        print("recs_df['recStrengthHybrid']: ", recs_df['recStrengthHybrid'])
 
         # Sorting recommendations by hybrid score
         recommendations_df = recs_df.sort_values('recStrengthHybrid', ascending=False).head(topn)

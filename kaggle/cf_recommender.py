@@ -8,6 +8,10 @@ class CFRecommender:
     MODEL_NAME = 'Collaborative Filtering'
     NUMBER_OF_FACTORS_MF = 15
 
+    # 15 - {'modelName': 'Collaborative Filtering', 'recall@5': 0.33392994119151115, 'recall@10': 0.46803886474047557}
+    # 20 - {'modelName': 'Collaborative Filtering', 'recall@5': 0.3308616722065968, 'recall@10': 0.4640756839682946}
+    # 12 - {'modelName': 'Collaborative Filtering', 'recall@5': 0.32127333162873944, 'recall@10': 0.45960112503196116}
+
     def __init__(self, articles, interactions_train_df):
 
         # Creating a sparse pivot table with users in rows and items in columns

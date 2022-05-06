@@ -23,11 +23,9 @@ class UserProfile:
     def build_users_profile(self, person_id, interactions_indexed_df):
         interactions_person_df = interactions_indexed_df.loc[person_id]
         user_item_profiles = self.get_item_profiles(interactions_person_df['contentId'])
-
         user_item_strengths = np.array(interactions_person_df['eventStrength']).reshape(-1, 1)
         # Weighted average of item profiles by the interactions strength
-        user_item_strengths_weighted_avg = np.sum(user_item_profiles.multiply(user_item_strengths), axis=0) / np.sum(
-            user_item_strengths)
+        user_item_strengths_weighted_avg = np.sum(user_item_profiles.multiply(user_item_strengths), axis=0) / np.sum(user_item_strengths)
         user_profile_norm = sklearn.preprocessing.normalize(user_item_strengths_weighted_avg)
         return user_profile_norm
 

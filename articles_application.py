@@ -3,10 +3,10 @@ import math
 import matplotlib.pyplot as plt
 
 from sklearn.model_selection import train_test_split
-from article.model_evaluator import ModelEvaluator
-from article.cb_recommender import ContentBasedRecommender
-from article.cf_recommender import CFRecommender
-from article.hybrid_recommender import HybridRecommender
+from kaggle.model_evaluator import ModelEvaluator
+from kaggle.cb_recommender import ContentBasedRecommender
+from kaggle.cf_recommender import CFRecommender
+from kaggle.hybrid_recommender import HybridRecommender
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
@@ -70,7 +70,6 @@ if __name__ == "__main__":
     interactions_df = pd.read_csv('data/users_interactions.csv')
 
     interactions_full_df, interactions_train_df, interactions_test_df = data_munging(interactions_df)
-    print(interactions_full_df[interactions_full_df["personId"] == -1479311724257856983])
     model_evaluator = ModelEvaluator(articles_df, interactions_full_df, interactions_train_df, interactions_test_df)
 
     cb_recommender_model = ContentBasedRecommender(articles_df, interactions_train_df)

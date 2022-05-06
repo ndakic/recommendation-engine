@@ -1,8 +1,8 @@
 import pandas as pd
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-from article.user_profile import UserProfile
+from sklearn.metrics.pairwise import cosine_similarity, manhattan_distances
+from kaggle.user_profile import UserProfile
 
 
 def prepare_data(articles_df, interactions_train_df):
