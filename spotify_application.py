@@ -3,9 +3,9 @@ import warnings
 
 from util import data_util
 from scipy.sparse import csr_matrix
-from engine import content_based_recommender
-from engine import collaborative_recommender
-from engine import hybrid_recommender
+from spotify_engine import content_based_recommender
+from spotify_engine import collaborative_recommender
+from spotify_engine import hybrid_recommender
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
@@ -100,17 +100,7 @@ if __name__ == "__main__":
     # data_util.generate_random_user_likes(data_util.load_data(FILENAME, True), "data/liked_tracks.csv", 20, 1000)
     print("Processing started..")
     data = data_util.load_data(FILENAME)
-    # content_based_recommendation(data)
-    # collaboration_filtering_recommendation("Suspicious Minds")
+    content_based_recommendation(data)
+    collaboration_filtering_recommendation("Suspicious Minds")
     hybrid_recommendation()
     print("Processing finished..")
-
-    # NOTE:
-        # - Measure ContentBased/Collaboration Recommenders (RMSE)
-            # I have no user's-after-hearing rating info so I don't have anything to compare with
-            # Liked tracks are randomly generated so there is no any kind of user taste, which means K is hard to determinate, and data itself doesn't make sense
-
-    # TO-DO: Hybrid approach needs to be implemented
-        # Hybrid approach consist of combinations of previous two recommenders
-        # idealy i should have evalution/measure for every prediction and then combination of those results represents hybrid approach
-    # TO-DO: Deep Learning based Recommender Systems: https://towardsdatascience.com/deep-learning-based-recommender-systems-3d120201db7e

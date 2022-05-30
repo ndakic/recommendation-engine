@@ -1,8 +1,8 @@
 import pandas as pd
 
 from scipy.sparse import csr_matrix
-from engine.content_based_recommender import CBRecommender
-from engine.collaborative_recommender import CFRecommender
+from spotify_engine.content_based_recommender import CBRecommender
+from spotify_engine.collaborative_recommender import CFRecommender
 from util import data_util
 
 

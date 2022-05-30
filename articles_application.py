@@ -3,10 +3,10 @@ import math
 import matplotlib.pyplot as plt
 
 from sklearn.model_selection import train_test_split
-from kaggle.model_evaluator import ModelEvaluator
-from kaggle.cb_recommender import ContentBasedRecommender
-from kaggle.cf_recommender import CFRecommender
-from kaggle.hybrid_recommender import HybridRecommender
+from article_engine.model_evaluator import ModelEvaluator
+from article_engine.cb_recommender import ContentBasedRecommender
+from article_engine.cf_recommender import CFRecommender
+from article_engine.hybrid_recommender import HybridRecommender
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
